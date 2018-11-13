@@ -1,6 +1,7 @@
 package Model;
 
 public abstract class FileDAttente {
+
     private int nbr_serveurs;
     private int nbr_clients;
 

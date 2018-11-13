@@ -2,7 +2,8 @@ package Model;
 
 public class MMS extends FileDAttente {
 
-    public MMS(int nbr_serveurs){
+    public MMS(int nbr_serveurs)
+    {
         setNbr_clients(-1);
         setNbr_serveurs(nbr_serveurs);
     }

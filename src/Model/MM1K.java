@@ -2,7 +2,8 @@ package Model;
 
 public class MM1K extends FileDAttente{
 
-    public MM1K(int nbr_clients){
+    public MM1K(int nbr_clients)
+    {
         setNbr_clients(nbr_clients);
         setNbr_serveurs(1);
     }
