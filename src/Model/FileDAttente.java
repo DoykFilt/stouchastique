@@ -5,14 +5,15 @@ public abstract class FileDAttente {
     private int nbr_serveurs;
     private int nbr_clients;
 
-    private double lambda;
-    private double mu;
+    protected double lambda;
+    protected double mu;
 
     public double calculate_rho(){
         return this.lambda / (this.mu * this.nbr_serveurs);
     }
     public abstract double calculate_q0();
-    public abstract double calculate_qlambda();
+    public abstract double calculate_qj(int j);
+
     public abstract double calculate_L();
     public abstract double calculate_Lq();
     public abstract double calculate_W();
