@@ -25,15 +25,16 @@ public class Main {
         System.out.println("Lq = " + testMM1K.calculate_Lq());
         System.out.println("q3 = " + testMM1K.calculate_qj(3));
 
-        MMS testMMS = new MMS(3);
-        testMM1K.lambda= 3;
-        testMM1K.mu=4;
+        MMS testMMS = new MMS(2);
+        testMMS.lambda= 10;
+        testMMS.mu=12;
         System.out.println("***** M|M|S *****");
-        System.out.println("RHO = " + testMM1K.calculate_rho());
-        System.out.println("q0 = " + testMM1K.calculate_q0());
-        System.out.println("L = " + testMM1K.calculate_L());
-        System.out.println("Lq = " + testMM1K.calculate_Lq());
-        System.out.println("q3 = " + testMM1K.calculate_qj(3));
+        System.out.println("RHO = " + testMMS.calculate_rho());
+        System.out.println("q0 = " + testMMS.calculate_q0());
+        System.out.println("L = " + testMMS.calculate_L());
+        System.out.println("Lq = " + testMMS.calculate_Lq());
+        System.out.println("W = " + testMMS.calculate_W());
+        System.out.println("Wq = " + testMMS.calculate_Wq());
 
     }
 }

@@ -47,7 +47,7 @@ public class MMS extends FileDAttente {
 
     @Override
     public double calculate_L() {
-        return calculate_Lq()+(1-getMu());
+        return calculate_Lq()+(getLambda()/getMu());
     }
 
     @Override
@@ -55,7 +55,7 @@ public class MMS extends FileDAttente {
         double rho = calculate_rho();
         int s = getNbr_serveurs();
 
-        return calculate_q0()*((pow(rho*s,s)*rho)/fact(s)*(pow(1-rho,2)));
+        return calculate_q0()*((pow(rho*s,s)*rho)/(fact(s)*(pow(1-rho,2))));
     }
 
     @Override
